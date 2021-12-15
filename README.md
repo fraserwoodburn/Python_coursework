@@ -40,4 +40,16 @@ Some of the attributes are measured in quite different scales, so feature scalin
 is applied to ensure accurate clustering of categories using the nearest neighbour
 method
 
-The code is annotated and should be easy enough to follow.
+1. load in the data using the scicit learn package as explained in the code
+from sklearn.datasets import load_breast_cancer
+
+2. plot the scatter matrix from pandas.plotting import scatter_matrix
+a = scatter_matrix(cancer, figsize=(25, 25), c=target) 
+
+3. decide which attributes to analyse further
+
+4. Plot them in more detail and then apply feature scaling to account for the 
+difference in axis scale
+
+5. check the model score to see how successful these attributes are at classifying
+breast cancer type.
